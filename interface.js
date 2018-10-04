@@ -34,6 +34,8 @@ $(document).ready(function() {
   function updateTemperature() {
     $('#temperature').text(thermostat.temperature);
     $('#indicator').attr('class', thermostat.energyUsage());
+    $('#tempHeading').attr('class', thermostat.energyUsage());
+    $('#temperature').attr('class', 'text-' + thermostat.energyUsage());
   };
 
   var weather = new Weather();
