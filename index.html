@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Thermostat</title>
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
     <section>
@@ -14,7 +15,11 @@
         <button id="powersaving-on">PSM on</button>
         <button id="powersaving-off">PSM off</button>
       </p>
+      <div id="indicator" class="medium-usage">
+      </div>
     </section>
-    <script src="js/Thermostat.js"></script> 
+    <script src="src/Thermostat.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="interface.js"></script>
   </body>
 </html>
