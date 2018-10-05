@@ -43,9 +43,6 @@ $(document).ready(function() {
     weather.getCityTemperature($('#current-city').val());
   })
   $('#save').click(function(){
-    $.post("/", function(data) {
-      
-    })
+    $.post("/", {thermo_temp: "test", current_temp: "", p_mode: ""})
   })
-
-});
+})
