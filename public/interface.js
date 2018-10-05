@@ -42,5 +42,10 @@ $(document).ready(function() {
   $('#submit-city').click(function(){
     weather.getCityTemperature($('#current-city').val());
   })
+  $('#save').click(function(){
+    $.post("/", function(data) {
+      
+    })
+  })
 
 });
